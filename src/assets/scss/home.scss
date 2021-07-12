@@ -1,0 +1,52 @@
+@import "@/assets/scss/_selfVariables"; // 自定義變數
+
+.singleNews {
+    img {
+        max-width: 100%;
+    }
+}
+
+// .filterBar {
+//     cursor: not-allowed;
+//     display: flex;
+//     justify-content: space-evenly;
+
+//     > div {
+//         width: 25%;
+//         @extend %allFlexCenter;
+//     }
+
+//     > div:not(:last-child) {
+//         border-right: 2px solid $middle-gray;
+//     }
+// }
+
+// .allProduct {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .singleProduct {
+//     width: 50%;
+//     margin-top: 20px;
+//     a {
+//         text-decoration: none;
+//     }
+
+//     h3 {
+//         font-size: $subtitle;
+//         font-weight: 400;
+//         color: #000;
+//     }
+//     h5 {
+//         font-size: $subtitle;
+//         font-weight: 400;
+//         color: $dominant-color;
+//     }
+
+//     img {
+//         display: block;
+//         margin: 0 auto;
+//         max-width: 80%;
+//     }
+// }

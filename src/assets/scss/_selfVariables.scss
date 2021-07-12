@@ -1,0 +1,44 @@
+$dominant-color: #ee4d2d;
+$light-gray: #f2f2f2;
+$middle-gray: #e0e0e0;
+$blue-green: #00bfa5;
+
+$main-title: 48px;
+$title: 36px;
+$subtitle: 26px;
+$body-text: 20px;
+$details: 16px;
+
+%allFlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// RWD 斷點設置
+// 與 bootstrap 4.5 一致
+$media-breakpoint-sm: 576px;
+$media-breakpoint-md: 768px;
+$media-breakpoint-lg: 992px;
+$media-breakpoint-xl: 1200px;
+
+@mixin layout-sm {
+    @media (min-width: $media-breakpoint-sm) {
+        @content;
+    }
+}
+@mixin layout-md {
+    @media (min-width: $media-breakpoint-md) {
+        @content;
+    }
+}
+@mixin layout-lg {
+    @media (min-width: $media-breakpoint-lg) {
+        @content;
+    }
+}
+@mixin layout-xl {
+    @media (min-width: $media-breakpoint-xl) {
+        @content;
+    }
+}
