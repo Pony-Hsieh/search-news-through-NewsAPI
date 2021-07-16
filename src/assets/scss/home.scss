@@ -1,52 +1,56 @@
 @import "@/assets/scss/_selfVariables"; // 自定義變數
 
-.singleNews {
-    img {
-        max-width: 100%;
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.searchFilter {
+    margin-top: 40px;
+    > div {
+        margin-top: 20px;
+    }
+    input[type="text"] {
+        padding-left: 8px;
+        outline: none;
+        border: 1.3px solid #6c757d;
+        border-radius: 4px;
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: #007bff;
+        }
+    }
+    .timeRange {
+        @include layout-md {
+            display: flex;
+            align-items: center;
+        }
     }
 }
 
-// .filterBar {
-//     cursor: not-allowed;
-//     display: flex;
-//     justify-content: space-evenly;
+.allNews {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    h6 {
+        margin-bottom: 2px;
+    }
+}
 
-//     > div {
-//         width: 25%;
-//         @extend %allFlexCenter;
-//     }
+.singleNews {
+    width: 100%;
+    @include layout-lg {
+        width: 48%;
+    }
+}
 
-//     > div:not(:last-child) {
-//         border-right: 2px solid $middle-gray;
-//     }
-// }
+.pagination {
+    @extend %allFlexCenter;
+}
 
-// .allProduct {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
-
-// .singleProduct {
-//     width: 50%;
-//     margin-top: 20px;
-//     a {
-//         text-decoration: none;
-//     }
-
-//     h3 {
-//         font-size: $subtitle;
-//         font-weight: 400;
-//         color: #000;
-//     }
-//     h5 {
-//         font-size: $subtitle;
-//         font-weight: 400;
-//         color: $dominant-color;
-//     }
-
-//     img {
-//         display: block;
-//         margin: 0 auto;
-//         max-width: 80%;
-//     }
-// }
+li.disabled {
+    &:hover {
+        cursor: not-allowed;
+    }
+}

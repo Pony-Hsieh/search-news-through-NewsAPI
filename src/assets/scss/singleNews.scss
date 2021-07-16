@@ -1,100 +1,11 @@
 @import "@/assets/scss/_selfVariables"; // 自定義變數
 
 img {
+    display: block;
     max-width: 100%;
+    margin: 0 auto;
 }
-// .topBar {
-//     display: flex;
-//     justify-content: space-between;
-//     button {
-//         border-radius: 50%;
-//         outline: none;
-//         border: 2px solid transparent;
-//         margin: 8px;
-//         background-color: rgba($color: #000, $alpha: 0.3);
-//         color: #fff;
-//     }
 
-//     .cartIcon {
-//         position: relative;
-
-//         div {
-//             background-color: $dominant-color;
-//             border-radius: 50%;
-//             width: 20px;
-//             height: 20px;
-//             @extend %allFlexCenter;
-//             color: #fff;
-//             position: absolute;
-//             top: -8px;
-//             right: -8px;
-//         }
-//     }
-// }
-
-// img {
-//     display: block;
-//     max-width: 80%;
-//     max-height: 400px;
-//     margin: 0 auto;
-// }
-
-// h3,
-// h5 {
-//     font-size: $subtitle;
-//     font-weight: 400;
-// }
-
-// h5 {
-//     color: $dominant-color;
-//     margin-top: 20px;
-// }
-
-// .bottomBar {
-//     position: fixed;
-//     bottom: 0;
-//     width: 100%;
-//     display: flex;
-//     a {
-//         display: block;
-//         text-decoration: none;
-//         color: #fff;
-//         &:hover {
-//             color: $blue-green;
-//         }
-//     }
-
-//     div {
-//         padding: 16px 0 8px 0;
-//     }
-
-//     div:nth-child(1) {
-//         background: $blue-green;
-//         color: white;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         width: 25%;
-//         cursor: not-allowed;
-//     }
-//     div:nth-child(2) {
-//         background: $blue-green;
-//         color: white;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         width: 25%;
-//         cursor: pointer;
-//         &:hover {
-//             color: $blue-green;
-//             background: white;
-//         }
-//     }
-//     div:nth-child(3) {
-//         @extend %allFlexCenter;
-//         background: $dominant-color;
-//         color: white;
-//         width: 50%;
-//         cursor: not-allowed;
-//     }
-// }
+h6 {
+    margin-bottom: 2px;
+}
